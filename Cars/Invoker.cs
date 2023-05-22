@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Cars
+﻿namespace Cars
 {
     public class Invoker
     {
@@ -24,9 +18,9 @@ namespace Cars
 
         public void DoFirstOrSecondCommand()
         {
-            while (firstCommand.Execute() == 0);
-            
-            while (secondCommand.Execute() != 5);
+            while (firstCommand.Execute() == 0) ;
+
+            while (secondCommand.Execute() != 5) ;
         }
     }
 }

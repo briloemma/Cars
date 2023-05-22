@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Dynamic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Cars
 {
@@ -29,7 +24,7 @@ namespace Cars
             Console.WriteLine("Enter car model");
             var CarModel = Console.ReadLine();
 
-            
+
             Console.WriteLine("Enter number of cars");
             var NumberOfCars = int.Parse(Console.ReadLine());
 
