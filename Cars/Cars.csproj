@@ -44,10 +44,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Car.cs" />
+    <Compile Include="CarList.cs" />
     <Compile Include="CommandOptions.cs" />
-    <Compile Include="GetCarInfo.cs" />
+    <Compile Include="FirstCommand.cs" />
+    <Compile Include="ICommand.cs" />
+    <Compile Include="Invoker.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SecondCommand.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
