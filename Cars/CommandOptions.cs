@@ -8,7 +8,7 @@ namespace Cars
     {
         public static void CountCarBrands()
         {
-            var cars = GetCarInfo.updatedListOfCars;
+            var cars = CarList.GetInstance();
 
             var numberOfCarTypes = cars.GroupBy(x => x.CarBrand).Count();
             var carsGroupedByModel = cars.GroupBy(x => x.CarBrand).
@@ -23,7 +23,7 @@ namespace Cars
 
         public static void CountAllCars()
         {
-            var cars = GetCarInfo.updatedListOfCars;
+            var cars = CarList.GetInstance();
 
             var numberOfCars = cars.Select(c => c.NumberOfCars);
 
@@ -39,7 +39,7 @@ namespace Cars
 
         public static void CountAveragePrice()
         {
-            var cars = GetCarInfo.updatedListOfCars;
+            var cars = CarList.GetInstance();
 
             var avgPrice = cars.Select(c => c.PricePerCar).Average();
 
@@ -48,7 +48,7 @@ namespace Cars
 
         public static void CountAveragePriceForEachBrand(string carBrand)
         {
-            var cars = GetCarInfo.updatedListOfCars;
+            var cars = CarList.GetInstance();
 
             List<int> prices = new List<int>();
 

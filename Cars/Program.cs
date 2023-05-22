@@ -4,7 +4,12 @@
     {
         static void Main(string[] args)
         {
-            GetCarInfo.PerformCommands();
+            Invoker invoker = new Invoker();
+            FirstCommand firstCommand = new FirstCommand();
+            SecondCommand secondCommand = new SecondCommand();
+            invoker.SetFirstCommand(firstCommand);
+            invoker.SetSecondCommand(secondCommand);
+            invoker.DoFirstOrSecondCommand();
         }
     }
 }

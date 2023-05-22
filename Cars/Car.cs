@@ -2,7 +2,7 @@
 
 namespace Cars
 {
-    public class Car : IComparable
+    public class Car
     {
         public string CarBrand { get; set; }
         public string CarModel { get; set; }
@@ -15,14 +15,6 @@ namespace Cars
             CarModel = carModel;
             NumberOfCars = numberOfCars;
             PricePerCar = pricePerCar;
-        }
-        public int CompareTo(object obj)
-        {
-            if (obj is Car car)
-            {
-                return CarBrand.CompareTo(car.CarBrand);
-            }
-            else throw new ArgumentException("Некорректное значение параметра");
         }
     }
 }
